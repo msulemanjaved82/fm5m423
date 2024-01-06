@@ -1,5 +1,5 @@
-import 'package:file_management_app/Home.dart';
-import 'package:file_management_app/sorting%20menu.dart';
+import 'package:filemanager/Home.dart';
+import 'package:filemanager/sorting%20menu.dart';
 import 'package:flutter/material.dart';
 import 'package:popover/popover.dart';
 
