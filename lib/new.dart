@@ -20,17 +20,14 @@ class _EditingState extends State<Editing> {
               SizedBox(
                 height: 20,
               ),
-              Align(
-                alignment: Alignment(2, 9),
-                child: Text(
-                  'Edit',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w600,
-                    height: 0,
-                  ),
+              Text(
+                'Edit',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w600,
+                  height: 0,
                 ),
               ),
               SizedBox(
