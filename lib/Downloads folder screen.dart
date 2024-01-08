@@ -1,4 +1,5 @@
 import 'package:filemanager/Home.dart';
+import 'package:filemanager/buttons.dart';
 import 'package:flutter/material.dart';
 
 class Downloadsfolder extends StatelessWidget {
@@ -16,28 +17,7 @@ class Downloadsfolder extends StatelessWidget {
                 SizedBox(height: 60),
                 Row(
                   children: [
-                    SizedBox(
-                        height: 28,
-                        width: 28,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white.withOpacity(0.0),
-                            padding: EdgeInsets.all(0),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        file_management_app()));
-                          },
-                          child: Container(
-                            child: Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.white,
-                            ),
-                          ),
-                        )),
+                    backbutton(),
                     SizedBox(
                       width: 247,
                     ),
@@ -62,13 +42,7 @@ class Downloadsfolder extends StatelessWidget {
                     SizedBox(
                       width: 6,
                     ),
-                    Container(
-                        width: 28,
-                        height: 28,
-                        child: Icon(
-                          Icons.more_vert,
-                          color: Colors.white,
-                        )),
+                    menubutton(),
                   ],
                 ),
                 SizedBox(
@@ -162,7 +136,8 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/VF.png'),
+                                    child:
+                                        Image.asset('assets/videofolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -255,7 +230,7 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/DOC.png'),
+                                    child: Image.asset('assets/docfolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -348,7 +323,8 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/IM.png'),
+                                    child:
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -441,7 +417,8 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/AUDIO.png'),
+                                    child:
+                                        Image.asset('assets/audiofolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -627,7 +604,8 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/VF.png'),
+                                    child:
+                                        Image.asset('assets/videofolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -720,7 +698,7 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/DOC.png'),
+                                    child: Image.asset('assets/docfolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -813,7 +791,8 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/IM.png'),
+                                    child:
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -906,7 +885,8 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/AUDIO.png'),
+                                    child:
+                                        Image.asset('assets/audiofolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),

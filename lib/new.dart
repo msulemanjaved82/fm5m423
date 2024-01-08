@@ -1,3 +1,4 @@
+import 'package:filemanager/Setting%20screen.dart';
 import 'package:flutter/material.dart';
 
 class Editing extends StatefulWidget {
@@ -57,7 +58,7 @@ class _EditingState extends State<Editing> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 21,
               ),
               Text(
                 'Recycle Bin',
@@ -72,16 +73,29 @@ class _EditingState extends State<Editing> {
               SizedBox(
                 height: 20,
               ),
-              Text(
-                'Setting',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w600,
-                  height: 0,
-                ),
-              ),
+              SizedBox(
+                  height: 50,
+                  width: 60,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white.withOpacity(0.0),
+                      padding: EdgeInsets.all(0),
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Sitting()));
+                    },
+                    child: Text(
+                      'Setting',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.w600,
+                        height: 0,
+                      ),
+                    ),
+                  )),
             ],
           ),
         ),

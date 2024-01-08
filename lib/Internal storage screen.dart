@@ -6,6 +6,7 @@ import 'package:filemanager/Home.dart';
 import 'package:filemanager/Image%20folder%20screen.dart';
 import 'package:filemanager/Video%20folder%20screen.dart';
 import 'package:filemanager/audio%20folder%20screen.dart';
+import 'package:filemanager/buttons.dart';
 import 'package:flutter/material.dart';
 
 class InternalStorage extends StatefulWidget {
@@ -28,27 +29,7 @@ class _InternalStorageState extends State<InternalStorage> {
               SizedBox(height: 60),
               Row(
                 children: [
-                  SizedBox(
-                      height: 28,
-                      width: 28,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white.withOpacity(0.0),
-                          padding: EdgeInsets.all(0),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => file_management_app()));
-                        },
-                        child: Container(
-                          child: Icon(
-                            Icons.arrow_back_ios,
-                            color: Colors.white,
-                          ),
-                        ),
-                      )),
+                  backbutton(),
                   SizedBox(
                     width: 10,
                   ),
@@ -116,7 +97,7 @@ class _InternalStorageState extends State<InternalStorage> {
               Container(
                 width: 388,
                 height: 186,
-                child: Image.asset("asset/chart.png"),
+                child: Image.asset("assets/chart.png"),
               ),
               SizedBox(
                 height: 20,
@@ -272,7 +253,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                     child: Container(
                                       width: 36,
                                       height: 36,
-                                      child: Image.asset('assets/IM.png'),
+                                      child: Image.asset('assets/VF.png'),
                                     ),
                                   ),
                                 ),
@@ -297,7 +278,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                   child: Align(
                                     alignment: Alignment.centerLeft,
                                     child: Text(
-                                      '13 items',
+                                      '14 items',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 14,
@@ -374,7 +355,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                     child: Container(
                                       width: 36,
                                       height: 36,
-                                      child: Image.asset('assets/IM.png'),
+                                      child: Image.asset('assets/DOC.png'),
                                     ),
                                   ),
                                 ),
@@ -476,7 +457,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                     child: Container(
                                       width: 36,
                                       height: 36,
-                                      child: Image.asset('assets/IM.png'),
+                                      child: Image.asset('assets/AUDIO.png'),
                                     ),
                                   ),
                                 ),
@@ -578,7 +559,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                     child: Container(
                                       width: 36,
                                       height: 36,
-                                      child: Image.asset('assets/IM.png'),
+                                      child: Image.asset('assets/DWN.png'),
                                     ),
                                   ),
                                 ),
@@ -696,7 +677,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/DOC.png'),
+                                  child: Image.asset('assets/docfolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -788,7 +769,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/IM.png'),
+                                  child: Image.asset('assets/imagefolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -880,7 +861,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/AUDIO.png'),
+                                  child: Image.asset('assets/audiofolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -972,7 +953,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/APK.png'),
+                                  child: Image.asset('assets/apkfolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -1064,7 +1045,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/VF.png'),
+                                  child: Image.asset('assets/videofolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -1156,7 +1137,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/DOC.png'),
+                                  child: Image.asset('assets/docfolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -1248,7 +1229,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/IM.png'),
+                                  child: Image.asset('assets/imagefolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -1340,7 +1321,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/AUDIO.png'),
+                                  child: Image.asset('assets/audiofolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
@@ -1432,7 +1413,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                 Container(
                                   width: 48,
                                   height: 48,
-                                  child: Image.asset('assets/APK.png'),
+                                  child: Image.asset('assets/apkfolder.png'),
                                 ),
                                 Container(
                                   margin: EdgeInsets.only(left: 8),
