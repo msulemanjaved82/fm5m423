@@ -58,7 +58,7 @@ class _EditingState extends State<Editing> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 21,
               ),
               Text(
                 'Recycle Bin',
