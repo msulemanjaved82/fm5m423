@@ -199,7 +199,7 @@ class Sitting extends StatelessWidget {
               Align(
                 alignment: Alignment.bottomLeft,
                 child: Text(
-                  'File management',
+                  'File Management',
                   style: TextStyle(
                     color: Color(0xFF949494),
                     fontSize: 16,
