@@ -19,28 +19,7 @@ class Imagefolder extends StatelessWidget {
                 SizedBox(height: 60),
                 Row(
                   children: [
-                    SizedBox(
-                        height: 28,
-                        width: 28,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white.withOpacity(0.0),
-                            padding: EdgeInsets.all(0),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        file_management_app()));
-                          },
-                          child: Container(
-                            child: Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.white,
-                            ),
-                          ),
-                        )),
+                    backbutton(),
                     SizedBox(
                       width: 247,
                     ),
@@ -144,7 +123,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -238,7 +217,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -332,7 +311,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -426,7 +405,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -520,7 +499,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -614,7 +593,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -708,7 +687,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -802,7 +781,7 @@ class Imagefolder extends StatelessWidget {
                                     width: 48,
                                     height: 48,
                                     child:
-                                        Image.asset('assets/Imagefolder.png'),
+                                        Image.asset('assets/imagefolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),

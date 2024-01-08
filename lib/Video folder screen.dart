@@ -1,4 +1,5 @@
 import 'package:filemanager/Home.dart';
+import 'package:filemanager/buttons.dart';
 import 'package:flutter/material.dart';
 
 class videofolder extends StatelessWidget {
@@ -17,28 +18,7 @@ class videofolder extends StatelessWidget {
                 SizedBox(height: 60),
                 Row(
                   children: [
-                    SizedBox(
-                        height: 28,
-                        width: 28,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white.withOpacity(0.0),
-                            padding: EdgeInsets.all(0),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        file_management_app()));
-                          },
-                          child: Container(
-                            child: Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.white,
-                            ),
-                          ),
-                        )),
+                    backbutton(),
                     SizedBox(
                       width: 247,
                     ),
@@ -63,13 +43,7 @@ class videofolder extends StatelessWidget {
                     SizedBox(
                       width: 6,
                     ),
-                    Container(
-                        width: 28,
-                        height: 28,
-                        child: Icon(
-                          Icons.more_vert,
-                          color: Colors.white,
-                        )),
+                    menubutton(),
                   ],
                 ),
                 SizedBox(
