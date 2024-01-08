@@ -176,7 +176,7 @@ class _SdcardState extends State<Sdcard> {
                                   child: Align(
                                     alignment: Alignment.centerLeft,
                                     child: Text(
-                                      '123 items',
+                                      '124 items',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 14,

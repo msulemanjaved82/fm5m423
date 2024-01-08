@@ -278,7 +278,7 @@ class _InternalStorageState extends State<InternalStorage> {
                                   child: Align(
                                     alignment: Alignment.centerLeft,
                                     child: Text(
-                                      '13 items',
+                                      '14 items',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 14,
