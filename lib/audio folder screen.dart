@@ -1,4 +1,5 @@
 import 'package:filemanager/Home.dart';
+import 'package:filemanager/buttons.dart';
 import 'package:flutter/material.dart';
 
 class Audiofolder extends StatelessWidget {
@@ -17,28 +18,7 @@ class Audiofolder extends StatelessWidget {
                 SizedBox(height: 60),
                 Row(
                   children: [
-                    SizedBox(
-                        height: 28,
-                        width: 28,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white.withOpacity(0.0),
-                            padding: EdgeInsets.all(0),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        file_management_app()));
-                          },
-                          child: Container(
-                            child: Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.white,
-                            ),
-                          ),
-                        )),
+                    backbutton(),
                     SizedBox(
                       width: 247,
                     ),
@@ -63,13 +43,7 @@ class Audiofolder extends StatelessWidget {
                     SizedBox(
                       width: 6,
                     ),
-                    Container(
-                        width: 28,
-                        height: 28,
-                        child: Icon(
-                          Icons.more_vert,
-                          color: Colors.white,
-                        )),
+                    menubutton(),
                   ],
                 ),
                 SizedBox(
@@ -163,7 +137,8 @@ class Audiofolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/AUDIO.png'),
+                                    child:
+                                        Image.asset('assets/audiofolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),

@@ -29,7 +29,7 @@ class file_management_app extends StatelessWidget {
                     child: Container(
                       height: 20,
                       child: Text(
-                        'Hi Hammad',
+                        'Hi user',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 14,
@@ -157,7 +157,8 @@ class file_management_app extends StatelessWidget {
                                     child: Container(
                                       width: 36,
                                       height: 36,
-                                      child: Image.asset('assets/IM.png'),
+                                      child: Image.asset("assets/IM.png"),
+                                      //Image.asset('assets/IM.png'),
                                     ),
                                   ),
                                 ),

@@ -1,3 +1,4 @@
+import 'package:filemanager/Home.dart';
 import 'package:filemanager/new.dart';
 import 'package:filemanager/sorting%20menu.dart';
 import 'package:flutter/material.dart';
@@ -58,6 +59,28 @@ class menubutton extends StatelessWidget {
         width: 28,
         child: Icon(
           Icons.more_vert,
+          color: Colors.white,
+        ),
+      ),
+    );
+  }
+}
+
+class backbutton extends StatelessWidget {
+  const backbutton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => file_management_app()));
+      },
+      child: Container(
+        height: 28,
+        width: 28,
+        child: Icon(
+          Icons.arrow_back_ios,
           color: Colors.white,
         ),
       ),
