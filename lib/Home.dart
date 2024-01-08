@@ -29,7 +29,7 @@ class file_management_app extends StatelessWidget {
                     child: Container(
                       height: 20,
                       child: Text(
-                        'Hi Hammad',
+                        'Hi user',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 14,
