@@ -46,11 +46,6 @@ class _InternalStorageState extends State<InternalStorage> {
                   SizedBox(
                     width: 104,
                   ),
-                  Container(
-                    width: 32,
-                    height: 32,
-                    color: Colors.white,
-                  ),
                 ],
               ),
               SizedBox(
