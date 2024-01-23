@@ -54,7 +54,7 @@ class _searchbarState extends State<searchbar> {
                 child: TextField(
                   controller: _searchController,
                   decoration: InputDecoration(
-                    labelText: 'Search',
+                    labelText: 'search',
                     fillColor: Colors.white,
                     focusColor: Colors.white,
                     iconColor: Colors.white,

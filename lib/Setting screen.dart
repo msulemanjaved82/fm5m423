@@ -23,7 +23,7 @@ class Sitting extends StatelessWidget {
                     width: 20,
                   ),
                   Text(
-                    'My File Setting',
+                    'File Setting',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,

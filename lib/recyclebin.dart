@@ -22,7 +22,7 @@ class recyclebin extends StatelessWidget {
                   width: 20,
                 ),
                 Text(
-                  'Recyclebin',
+                  'RecycleBin',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 24,

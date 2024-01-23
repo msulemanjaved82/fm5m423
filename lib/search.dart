@@ -50,7 +50,7 @@ class _searchState extends State<search> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
                     child: Text(
-                      'Search',
+                      'search',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
