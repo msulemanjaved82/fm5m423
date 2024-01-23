@@ -17,7 +17,7 @@ class menuitems extends StatelessWidget {
                 width: 120,
                 child: Center(
                   child: Text(
-                    'Ascending',
+                    'ascending',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
@@ -36,7 +36,7 @@ class menuitems extends StatelessWidget {
                 width: 120,
                 child: Center(
                   child: Text(
-                    'Decsending',
+                    'decsending',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
