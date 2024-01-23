@@ -53,7 +53,7 @@ class menubutton extends StatelessWidget {
       onTap: () => showPopover(
           context: context,
           bodyBuilder: (context) => Editing(),
-          height: 250,
+          height: 251,
           width: 150,
           direction: PopoverDirection.left),
       child: Container(
