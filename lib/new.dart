@@ -23,7 +23,7 @@ class _EditingState extends State<Editing> {
                 height: 20,
               ),
               Text(
-                'Edit',
+                'edit',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
