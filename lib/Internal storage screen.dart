@@ -43,49 +43,12 @@ class _InternalStorageState extends State<InternalStorage> {
                       height: 0,
                     ),
                   ),
-                  SizedBox(
-                    width: 104,
-                  ),
                 ],
               ),
               SizedBox(
                 height: 41,
               ),
-              Container(
-                  width: double.infinity,
-                  height: 47,
-                  decoration: ShapeDecoration(
-                    color: Colors.white.withOpacity(0.2800000011920929),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(31),
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      //search bar text
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                        child: Text(
-                          'Search',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: 'Inter',
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 264),
-                      Padding(
-                          //search icon
-                          padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
-                          child: Icon(
-                            Icons.search,
-                            color: Colors.white,
-                          )),
-                    ],
-                  )),
+              seachbar1(),
               SizedBox(
                 height: 20,
               ),

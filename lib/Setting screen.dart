@@ -203,7 +203,7 @@ class Sitting extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(12, 8, 8, 12),
+                  padding: const EdgeInsets.fromLTRB(12, 8, 8, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

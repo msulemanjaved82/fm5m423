@@ -15,7 +15,7 @@ class _EditingState extends State<Editing> {
       backgroundColor: Colors.black,
       body: Container(
         child: Padding(
-          padding: const EdgeInsets.all(8.3),
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
           child: Column(
             children: [
               SizedBox(

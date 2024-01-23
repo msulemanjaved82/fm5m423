@@ -7,6 +7,8 @@ import 'package:filemanager/Internal%20storage%20screen.dart';
 import 'package:filemanager/SD%20card%20screen.dart';
 import 'package:filemanager/Video%20folder%20screen.dart';
 import 'package:filemanager/audio%20folder%20screen.dart';
+import 'package:filemanager/buttons.dart';
+import 'package:filemanager/searchbar.dart';
 import 'package:flutter/material.dart';
 
 class file_management_app extends StatelessWidget {
@@ -61,43 +63,8 @@ class file_management_app extends StatelessWidget {
                 ),
                 SizedBox(height: 16),
                 Padding(
-                  //search bar
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-                  child: Container(
-                      width: double.infinity,
-                      height: 47,
-                      decoration: ShapeDecoration(
-                        color: Colors.white.withOpacity(0.2800000011920929),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(31),
-                        ),
-                      ),
-                      child: Row(
-                        children: [
-                          //search bar text
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                            child: Text(
-                              'Search',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontFamily: 'Inter',
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ),
-                          SizedBox(width: 264),
-                          Padding(
-                              //search icon
-                              padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
-                              child: Icon(
-                                Icons.search,
-                                color: Colors.white,
-                              )),
-                        ],
-                      )),
+                  child: seachbar1(),
                 ),
                 SizedBox(
                   height: 20,
@@ -764,5 +731,46 @@ class file_management_app extends StatelessWidget {
                 ),
               ],
             )));
+  }
+}
+
+class _searchbarState extends State<searchbar> {
+  TextEditingController _searchController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Container(
+              height: 47,
+              child: TextField(
+                controller: _searchController,
+                decoration: InputDecoration(
+                  labelText: 'Search',
+                  suffixIcon: IconButton(
+                    icon: Icon(Icons.search),
+                    onPressed: () {
+                      _searchController.clear();
+                    },
+                  ),
+                ),
+                onChanged: (value) {
+                  // Handle search logic here
+                  // You can filter a list of items based on the search input
+                  // For simplicity, let's just print the search query
+                  print('Search query: $value');
+                },
+              ),
+            ),
+
+            // Display search results or other content here
+            // For simplicity, let's just show a Text widget with the search query
+          ],
+        ),
+      ),
+    );
   }
 }

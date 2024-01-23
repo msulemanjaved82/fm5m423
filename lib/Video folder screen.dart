@@ -1,4 +1,3 @@
-import 'package:filemanager/Home.dart';
 import 'package:filemanager/buttons.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +17,7 @@ class videofolder extends StatelessWidget {
                 SizedBox(height: 60),
                 Row(
                   children: [
-                    backbutton(),
+                    Container(child: backbutton()),
                     SizedBox(
                       width: 247,
                     ),
@@ -91,23 +90,7 @@ class videofolder extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Icon(
-                      Icons.sort,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      'Date',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w500,
-                        height: 0,
-                      ),
-                    ),
+                    sortingbutton(),
                   ],
                 ),
                 SizedBox(

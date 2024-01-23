@@ -89,23 +89,7 @@ class Downloadsfolder extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Icon(
-                      Icons.sort,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      'Date',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w500,
-                        height: 0,
-                      ),
-                    ),
+                    sortingbutton(),
                   ],
                 ),
                 SizedBox(
@@ -510,7 +494,7 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/APK.png'),
+                                    child: Image.asset('assets/apkfolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
@@ -978,7 +962,7 @@ class Downloadsfolder extends StatelessWidget {
                                   Container(
                                     width: 48,
                                     height: 48,
-                                    child: Image.asset('assets/APK.png'),
+                                    child: Image.asset('assets/apkfolder.png'),
                                   ),
                                   Container(
                                     margin: EdgeInsets.only(left: 8),
