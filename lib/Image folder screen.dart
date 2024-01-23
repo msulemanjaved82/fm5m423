@@ -20,7 +20,7 @@ class Imagefolder extends StatelessWidget {
                   children: [
                     backbutton(),
                     SizedBox(
-                      width: 247,
+                      width: 235,
                     ),
                     Container(
                       width: 28,
@@ -31,11 +31,11 @@ class Imagefolder extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 6,
+                      width: 12,
                     ),
                     searchbutton(),
                     SizedBox(
-                      width: 6,
+                      width: 12,
                     ),
                     menubutton(),
                   ],

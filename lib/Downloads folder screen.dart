@@ -7,6 +7,7 @@ class Downloadsfolder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           backgroundColor: Colors.black,
           body: Padding(
@@ -18,7 +19,7 @@ class Downloadsfolder extends StatelessWidget {
                   children: [
                     backbutton(),
                     SizedBox(
-                      width: 247,
+                      width: 235,
                     ),
                     Container(
                       width: 28,
@@ -29,17 +30,11 @@ class Downloadsfolder extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 6,
+                      width: 12,
                     ),
-                    Container(
-                        width: 28,
-                        height: 28,
-                        child: Icon(
-                          Icons.search,
-                          color: Colors.white,
-                        )),
+                    searchbutton(),
                     SizedBox(
-                      width: 6,
+                      width: 12,
                     ),
                     menubutton(),
                   ],

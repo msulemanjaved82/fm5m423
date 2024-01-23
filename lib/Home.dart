@@ -8,6 +8,7 @@ import 'package:filemanager/SD%20card%20screen.dart';
 import 'package:filemanager/Video%20folder%20screen.dart';
 import 'package:filemanager/audio%20folder%20screen.dart';
 import 'package:filemanager/buttons.dart';
+import 'package:filemanager/recyclebin.dart';
 import 'package:filemanager/searchbar.dart';
 import 'package:flutter/material.dart';
 
@@ -684,50 +685,56 @@ class file_management_app extends StatelessWidget {
                 SizedBox(
                   height: 24,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 20),
-                  child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: Container(
-                        height: 52,
-                        width: 160,
-                        decoration: ShapeDecoration(
-                          color: Color(0x47FCFCFC),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                        ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                                child: Container(
-                                  height: 28,
-                                  width: 28,
-                                  child: Image.asset('assets/RC.png'),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: SizedBox(
+                      height: 52,
+                      width: 160,
+                      child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0x47FCFCFC),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              padding: EdgeInsets.only(left: 0)),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => recyclebin()));
+                          },
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(12, 0, 0, 0),
+                                  child: Container(
+                                    height: 28,
+                                    width: 28,
+                                    child: Image.asset('assets/RC.png'),
+                                  ),
                                 ),
-                              ),
-                              SizedBox(
-                                width: 4,
-                              ),
-                              Text(
-                                'Recycle Bin',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontFamily: 'Inter',
-                                  fontWeight: FontWeight.w500,
+                                SizedBox(
+                                  width: 4,
                                 ),
-                              ),
-                            ],
-                          ),
-                        )),
+                                Text(
+                                  'Recycle Bin',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )),
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: 10,
                 ),
               ],
             )));

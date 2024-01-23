@@ -15,7 +15,7 @@ class display extends StatelessWidget {
           body: Column(
             children: [
               SizedBox(
-                height: 40,
+                height: 60,
               ),
               Align(
                   alignment: Alignment.centerLeft,
@@ -23,13 +23,10 @@ class display extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 20),
                     child: backbutton(),
                   )),
-              SizedBox(
-                height: 20,
-              ),
               Center(
                   child: Container(
-                      height: 500,
-                      width: 300,
+                      height: 750,
+                      width: 400,
                       child: Image.asset("assets/display.jpg"))),
             ],
           )),
